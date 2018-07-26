@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
+    [SerializeField] AudioClip destroyBlockSound;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        AudioSource.PlayClipAtPoint(destroyBlockSound, Camera.main.transform.position);
         Destroy(gameObject);
-        Debug.Log(collision.gameObject.name);
     }
 
 }
