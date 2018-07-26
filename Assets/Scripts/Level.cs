@@ -2,15 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class Level : MonoBehaviour {
+    [SerializeField] int blocksLeft;
+
+    SceneLoaderScript sceneLoader;
+
+    private void Start()
+    {
+        sceneLoader = FindObjectOfType<SceneLoaderScript>();
+    }
+
+    public void CountBlocksLeft()
+    {
+        blocksLeft++;
+    }
+
+    public void RemoveBlock()
+    {
+        blocksLeft--;
+        if(blocksLeft <= 0)
+        {
+            sceneLoader.LoadNextScene();
+        }
+    }
+    
+
+
 }
