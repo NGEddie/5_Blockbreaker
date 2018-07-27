@@ -10,6 +10,20 @@ public class GameStatus : MonoBehaviour {
     [SerializeField] int pointsPerBlock =5;
     [SerializeField] TextMeshProUGUI scoreText;
 
+    private void Awake()
+    {
+        int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
+         if (gameStatusCount>1)
+        {
+            Destroy(gameObject);
+        }
+
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+          
+        }
+    }
 
     private void Start()
     {
@@ -22,7 +36,7 @@ public class GameStatus : MonoBehaviour {
         Time.timeScale = gameSpeed;	
 	}
 
-    public void updateCurrentScore()
+    public void UpdateCurrentScore()
     {
         currentScore += pointsPerBlock;
         scoreText.text = currentScore.ToString();

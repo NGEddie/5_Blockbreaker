@@ -7,12 +7,12 @@ public class SceneLoaderScript : MonoBehaviour
 {
     public void LoadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex;
 
-        if (currentSceneIndex < SceneManager.sceneCountInBuildSettings -1)
+        if (GetCurrentSceneIndex() < SceneManager.sceneCountInBuildSettings -1)
         {
-            nextSceneIndex = currentSceneIndex + 1;
+            nextSceneIndex = GetCurrentSceneIndex() + 1;
         }
         else
         {
@@ -31,6 +31,11 @@ public class SceneLoaderScript : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public int GetCurrentSceneIndex()
+    {
+         return SceneManager.GetActiveScene().buildIndex;
     }
 }
 

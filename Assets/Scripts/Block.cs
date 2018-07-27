@@ -17,7 +17,7 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        FindObjectOfType<GameStatus>().updateCurrentScore();
+        FindObjectOfType<GameStatus>().UpdateCurrentScore();
         AudioSource.PlayClipAtPoint(destroyBlockSound, Camera.main.transform.position);
         Destroy(gameObject);
         level.RemoveBlock();
