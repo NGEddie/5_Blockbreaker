@@ -16,7 +16,8 @@ public class SceneLoaderScript : MonoBehaviour
         }
         else
         {
-            nextSceneIndex = 0;
+            LoadStartScene();
+            return;
         }
 
         SceneManager.LoadScene(nextSceneIndex);
@@ -24,6 +25,7 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void LoadStartScene()
     {
+        FindObjectOfType<GameStatus>().ResetGame();
         SceneManager.LoadScene(0);
         
     }
