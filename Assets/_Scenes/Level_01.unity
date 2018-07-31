@@ -162,16 +162,6 @@ Prefab:
       propertyPath: m_Name
       value: Block (39)
       objectReference: {fileID: 0}
-    - target: {fileID: 212665413817334740, guid: 1278c54ab1502490e9cf918e857fd660,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.9744926
-      objectReference: {fileID: 0}
-    - target: {fileID: 212665413817334740, guid: 1278c54ab1502490e9cf918e857fd660,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.18431371
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1278c54ab1502490e9cf918e857fd660, type: 2}
   m_IsPrefabAsset: 0
@@ -222,6 +212,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 412ff66b2b64b3e4293c7b6620d2e286, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &326753517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c,
+    type: 2}
+  m_PrefabInternal: {fileID: 761844437}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,19 +342,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114714390378955444, guid: 1278c54ab1502490e9cf918e857fd660,
+        type: 2}
+      propertyPath: blockVFX
+      value: 
+      objectReference: {fileID: 326753517}
     - target: {fileID: 1855257062025642, guid: 1278c54ab1502490e9cf918e857fd660, type: 2}
       propertyPath: m_Name
       value: Block (34)
-      objectReference: {fileID: 0}
-    - target: {fileID: 212665413817334740, guid: 1278c54ab1502490e9cf918e857fd660,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.9744926
-      objectReference: {fileID: 0}
-    - target: {fileID: 212665413817334740, guid: 1278c54ab1502490e9cf918e857fd660,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.18431371
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1278c54ab1502490e9cf918e857fd660, type: 2}
@@ -405,6 +395,52 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f42c4146569e32d47a0b312916b6a24b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &761844437
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.371941
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.3496118
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &881043859
 GameObject:
