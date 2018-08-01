@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class Block : MonoBehaviour
     [SerializeField] AudioClip destroyBlockSound;
     [SerializeField] GameObject blockVFX;
     [SerializeField] int maxHits;
+    [SerializeField] Sprite[] hitSprites;
 
     //cached reference
     Level level;
@@ -44,6 +46,15 @@ public class Block : MonoBehaviour
         {
             DestoryBlock();
         }
+        else
+        {
+            ShowNextHitSprite();
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        GetComponent<SpriteRenderer>().sprite = hitSprites[timesHit-1];
     }
 
     private void DestoryBlock()

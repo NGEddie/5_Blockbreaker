@@ -81,6 +81,8 @@ MonoBehaviour:
   destroyBlockSound: {fileID: 8300000, guid: 473224b6e268b7349966d4a3a4d5a696, type: 3}
   blockVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
   maxHits: 2
+  hitSprites:
+  - {fileID: 21300000, guid: eeec8b81adcccea47ac010e5b05d9502, type: 3}
   timesHit: 0
 --- !u!212 &212665413817334740
 SpriteRenderer:
