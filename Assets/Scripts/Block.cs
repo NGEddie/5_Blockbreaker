@@ -8,7 +8,6 @@ public class Block : MonoBehaviour
     // config parameters
     [SerializeField] AudioClip destroyBlockSound;
     [SerializeField] GameObject blockVFX;
-    [SerializeField] int maxHits;
     [SerializeField] Sprite[] hitSprites;
 
     //cached reference
@@ -42,6 +41,7 @@ public class Block : MonoBehaviour
     private void HandleHit()
     {
         timesHit++;
+        int maxHits = hitSprites.Length + 1;
         if (timesHit >= maxHits)
         {
             DestoryBlock();
